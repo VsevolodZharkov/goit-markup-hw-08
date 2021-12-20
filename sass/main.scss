@@ -1,0 +1,19 @@
+@import './utils/variables';
+@import './base/reset';
+
+@import './components/container';
+
+// осн. стр. //
+@import './layout/header';
+@import './layout/hero';
+@import './layout/criteria';
+@import './layout/work';
+@import './layout/team';
+@import './layout/regularclients';
+
+
+//портфолио//
+@import './layout/portfoll';
+
+@import './layout/footer';
+@import './layout/backdrop';
