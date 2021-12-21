@@ -5,7 +5,7 @@
     $desktop: 1200px;
 
     @if $range -- mobile-only {
-        @media (max-width: #{$table - 0.02} ) {
+        @media (max-width: #{$table - 0.02}) {
             @content;
         }
     }
@@ -30,7 +30,7 @@
         }
     }
     @else if $range -- desktop {
-        @media (max-width: #{$desktop - 0.02) {
+        @media (max-width: #{$desktop - 0.02}) {
             @content;
         }
     }
