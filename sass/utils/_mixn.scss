@@ -1,5 +1,5 @@
 
-@mixin mq ($range){
+@mixin mq ($range) {
     $mobile: 480px;
     $table: 768px;
     $desktop: 1200px;
@@ -35,3 +35,5 @@
         }
     }
 }
+
+
