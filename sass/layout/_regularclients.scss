@@ -1,20 +1,16 @@
 
 .section-regular-clients {
     background-color: var(--background-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
-// .conteiners {
-//     width: 1200px;
-//     padding: 0 15px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     text-align: center;
-// }
-// .conteiners {
-//     width: 1200px;
-//     padding: 0 15px;
-// }
+.section-regular-clients-conteiners {
+    width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 .regular-clients__titles {
     color: var(--text-color-zag);
     font-weight: 700;
@@ -23,12 +19,12 @@
     letter-spacing: 0.03em;
     margin-bottom: 50px;
 }
-// .clients__list {
-    // display: flex;
-    // justify-content: center;
-// }
+.clients__list {
+    display: flex;
+    justify-content: center;
+}
 .clients__item + .clients__item {
-    margin-bottom: 30px;
+    margin-left: 30px;
 }
 .clients__link {
     display: flex;

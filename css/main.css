@@ -45,32 +45,13 @@ button {
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .conteiners {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-@media screen and (min-width: 480px) {
-  .conteiners {
-    width: 448px;
-    max-width: 0 auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .conteiners {
-    width: 720px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .conteiners {
-    width: 1200px;
-  }
+  width: 1200px;
+  padding: 0 15px;
 }
 
 .visually {
@@ -92,14 +73,19 @@ img {
   pointer-events: none;
 }
 
+/*         header        */
 .header {
   background-color: var(--background-color);
   border-bottom: 1px solid var(--border-line-heder);
 }
 
-.containers {
+.header-containers {
   display: flex;
   align-items: center;
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-nav {
@@ -232,15 +218,6 @@ img {
   width: 10px;
 }
 
-.section-hero-containers {
-  display: block;
-  text-align: center;
-  width: 1200px;
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .section-hero__title {
   margin-bottom: 30px;
   color: var(--background-color);
@@ -281,6 +258,15 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.section-hero-containers {
+  display: block;
+  text-align: center;
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-criteria {
@@ -504,8 +490,16 @@ img {
 
 .section-regular-clients {
   background-color: var(--background-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-regular-clients-conteiners {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .regular-clients__titles {
@@ -517,8 +511,13 @@ img {
   margin-bottom: 50px;
 }
 
+.clients__list {
+  display: flex;
+  justify-content: center;
+}
+
 .clients__item + .clients__item {
-  margin-bottom: 30px;
+  margin-left: 30px;
 }
 
 .clients__link {
