@@ -50,8 +50,27 @@ img {
 }
 
 .conteiners {
-  width: 1200px;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .conteiners {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conteiners {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conteiners {
+    width: 1200px;
+  }
 }
 
 .visually {
@@ -271,20 +290,27 @@ img {
 
 .section-criteria {
   background-color: var(--background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.section-criteria-containers {
-  width: 1200px;
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 1200px) {
+  .section-criteria {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .criteria__feature-listread {
-  display: flex;
-  justify-content: center;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .criteria__feature-listread {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
 }
 
 .criteria__box {
@@ -292,7 +318,6 @@ img {
   justify-content: center;
   align-items: center;
   height: 120px;
-  width: 270px;
   /*padding: 25px 102px;*/
   background: #F5F4FA;
   border-radius: 4px;
@@ -300,13 +325,21 @@ img {
 }
 
 .criteria__point {
-  height: 251px;
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
-.criteria__point:nth-child(4n) {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .criteria__point {
+    width: calc(100% / 2 - 30px);
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .criteria__point {
+    width: calc(100%  / 4 - 30px);
+    margin-bottom: 0;
+  }
 }
 
 .criteria__icon {
@@ -320,8 +353,21 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 10px;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .criteria__title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .criteria__title {
+    text-align: left;
+  }
 }
 
 .criteria__texticon {
@@ -330,8 +376,6 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  width: 270px;
-  height: 75px;
 }
 
 .section-work {
