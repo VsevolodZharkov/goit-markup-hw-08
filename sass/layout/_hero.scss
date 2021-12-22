@@ -1,17 +1,23 @@
 .section-hero__title {
-    margin-bottom: 30px;
     color: var(--background-color); 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em; 
+    letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+    @media screen and (min-width: 480px) {
+        font-size: 26px;
+        line-height: 1.61;  
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 .section-hero__btn {
     display: inline-block;
     padding: 10px 32px;
     border-radius: 4px;
-
     background-color: var(--accent-color);
     color: var(--background-color);
     font-weight: 700;
@@ -28,10 +34,8 @@
     }
 }
 .section-hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
     max-width: 1600px;
-    height: 600px;
+    height: 100%;
     margin: 0 auto;
     background-color:#C4C4C4;
     background-image: linear-gradient(
@@ -42,12 +46,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-.section-hero-containers {
-    display: block;
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
-    width: 1200px;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
