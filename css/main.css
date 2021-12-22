@@ -309,7 +309,7 @@ img {
   width: 10px;
 }
 
-.headermodalbtn {
+.headermodal {
   margin-left: auto;
   color: var(--background-color);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -318,26 +318,68 @@ img {
   vertical-align: middle;
 }
 
-.headermodalbtn:hover, .headermodalbtn:focus {
+.headermodal:hover, .headermodal:focus {
   fill: var(--accent-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
-  .headermodalbtn {
+  .headermodal {
     display: none;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .headermodalbtn {
+  .headermodal {
     display: none;
   }
 }
 
-.headermodal__svg {
-  width: 40px;
-  height: 40px;
+.backdroptwoheader {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms ease-in-out;
+}
+
+.backdroptwoheader__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+  background-color: var(--background-color);
+  border-radius: 4px;
+}
+
+.backdroptwoheader__modalbtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: var(--background-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 6px 6px;
+  background-color: transparent;
+  vertical-align: middle;
+}
+
+.backdroptwoheader__modalbtn:hover, .backdroptwoheader__modalbtn:focus {
+  fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdroptwoheader__svg {
+  height: 18px;
+  width: 18px;
 }
 
 .section-hero__title {
