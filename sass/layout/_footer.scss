@@ -3,6 +3,38 @@
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
+    @media screen and (min-width: 768px) {
+        .flexcont {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+        }
+    }
+}
+.footer-flexxd {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+    }
+}
+.leftpos {
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        margin-right: 165px;
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+        margin-right: 70px;
+        margin-bottom: 0;
+    }
+
+}
+.leftpos__box {
+    @media screen and (min-width: 768px) {
+        max-width: 232px;
+        height: auto;
+    }
 }
 .leftpos__logo {
     display: block;
@@ -26,6 +58,7 @@
     letter-spacing: 0.03em;
     font-style: initial;
     margin-bottom: 9px;
+
 }
 .leftpos__link {
     display: block;
@@ -45,12 +78,18 @@
     &.last {
         margin-bottom: 9px;
     }
-    margin-bottom: 60px;
 }
 
 //rightpo//
 .rightpos {
     width: 100%;
+    @media screen and (min-width: 768px) {
+        width: auto;
+    }
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+        margin-right: 93px;
+    }
 }
 .rightpos__texr-sociallast {
     color: var(--background-color);
@@ -88,6 +127,11 @@
 }
 
 //футер меил//
+.footermail{
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+}
 .footermail__text {
     color: var(--background-color);
     font-weight: 700;
@@ -97,7 +141,11 @@
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-
+.mail__form {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
 .mail__input {
     min-width: 100%;
     height: 50px;
@@ -112,6 +160,9 @@
     color: rgba(255, 255, 255, 0.6);
     background-color: transparent;
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+        min-width: 450px;
+    }
 }
 
 .btn__subscribe {
@@ -131,6 +182,9 @@
     color: var(--background-color);
     // margin-left: 12px;
     border:none;
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+    }
 }
 .btn__iconss {
     margin-left: 10px;

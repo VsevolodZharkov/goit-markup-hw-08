@@ -11,7 +11,7 @@
     </head>
 <body>
     <header class="header">
-        <div class="header-containers">
+        <div class="conteiners headerflexcont">
             <nav class="header-nav">
                 <a  class="header-nav__link-logo" href="index.html">
                     <span class="header-nav__span">Web</span>Studio
@@ -21,15 +21,21 @@
                         <a href="index.html" class="site-nav__link">Студия</a>
                     </li>
                     <li class="site-nav__point nav">
-                        <a href="./portfolio.html" class="site-nav__link  acctive current">Портфолио</a>
+                        <a href="./portfolio.html" class="site-nav__link acctive current">Портфолио</a>
                     </li>
                     <li class="site-nav__point nav">
                         <a href="" class="site-nav__link">Контакты</a>
                     </li>
                 </ul>
+                    <button class="headermodal" type="button">
+                        <svg class="headermodal__svg">
+                            <use href="./images/icons.svg#icon-menu_40px-1">
+                            </use>
+                        </svg>
+                    </button>
             </nav>
             <ul class="auth">
-                <li class="auth__point dot">
+                <li class="auth__point mbheader dot">
                     <a class="auth__link-contakt" href="mailto:info@devstudio.com">
                         <svg class="auth__acon iconhw">
                             <use href="./images/icons.svg#icon-envelope-g2">
@@ -240,18 +246,19 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer-containers">
-            <div class="leftpos">
+        <div class="conteiners footer-flexxd">
+            <div class="flexcont">
+                <div class="leftpos">
                 <a href="index.html" class="leftpos__logo">
                     <span class="leftpos__span">Web</span>Studio
                 </a>
-                <address >
+                <address class="leftpos__box"> 
                     <p class="leftpos__text">г. Киев, пр-т Леси Украинки, 26</p>
-                    <a class="leftpos__link last" href="mailto:info@devstudio.com" >info@devstudio.com</a>
+                    <a class="leftpos__link last" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     <a class="leftpos__link" href="tel:+380961111111" >+38 096 111 11 11</a>
                 </address>
-            </div>
-            <div class="rightpos">
+                </div>
+                <div class="rightpos">
                 <p class="rightpos__texr-sociallast">присоединяйтесь</p>
             <ul class="rightpossocial__list">
                 <li class="rightpossocial__item">
@@ -287,11 +294,11 @@
                     </a>
                 </li>
             </ul> 
+                </div>
             </div>
             <div class="footermail">
                 <p class="footermail__text">Подпишитесь на рассылку</p>
                     <form action="#" class="mail__form">
-                        <div class="mail__field">
                             <div class="mail__wrap">
                                 <input
                                     type="email"
@@ -301,16 +308,13 @@
                                     placeholder="E-mail"
                                 />
                             </div>
-                            <div class="cover__btn">
-                                <button type="submit" class="btn__subscribe">
+                            <button type="submit" class="btn__subscribe">
                                     Подписаться
                                     <svg class="btn__iconss">
                                         <use href="./images/icons.svg#icon-icon-telegram">
                                         </use>
                                     </svg>
-                                </button>
-                            </div>
-                        </div>
+                            </button>
                     </form>    
             </div>
         </div>
