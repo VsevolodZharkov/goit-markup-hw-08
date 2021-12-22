@@ -379,9 +379,16 @@ img {
 }
 
 .section-work {
-  background-color: var(--background-color);
-  padding-top: 0px;
-  padding-bottom: 94px;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-work {
+    display: block;
+    background-color: var(--background-color);
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
 }
 
 .section-work__zag {
