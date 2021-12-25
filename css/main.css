@@ -516,6 +516,7 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-transform: inherit;
+  border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -592,6 +593,12 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .criteria__feature-listread {
+    margin-bottom: 0;
   }
 }
 
@@ -915,12 +922,18 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 94px;
+  height: 92px;
   width: 100%;
-  padding: 16px 32px;
   background-color: var(--fon-background-color-two);
   border-radius: 5%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .clients__link {
+    height: 92px;
+    width: 170px;
+  }
 }
 
 .clients__link {
@@ -935,9 +948,9 @@ img {
   border: 1px solid var(--accent-color);
 }
 
-.clients__icon {
-  height: 92px;
-  width: 170px;
+.clients__iconn {
+  height: 60px;
+  width: 106px;
 }
 
 .portfoll {
@@ -1313,6 +1326,12 @@ img {
 @media screen and (min-width: 768px) {
   .mail__input {
     min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail__input {
+    min-width: 358px;
   }
 }
 

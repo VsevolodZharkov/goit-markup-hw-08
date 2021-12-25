@@ -50,12 +50,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 94px;
+    height: 92px;
     width: 100%;
-    padding: 16px 32px;
     background-color: var(--fon-background-color-two);
     border-radius: 5%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 480px) {
+        height: 92px;
+        width: 170px;
+    }
 }
 .clients__link {
     background-color: var(--background-color);
@@ -68,7 +71,7 @@
         border: 1px solid var(--accent-color);
     }
 }
-.clients__icon {
-    height: 92px;
-    width: 170px;
+.clients__iconn {
+    height: 60px;
+    width: 106px;
 }
