@@ -16,6 +16,72 @@
                 <a  class="header-nav__link-logo" href="index.html">
                     <span class="header-nav__span">Web</span>Studio
                 </a>
+                <button class="menu-button" 
+                type="button"
+                aria-expanded="false"
+                aria-controls="menu-conteinerone"
+                data-menu-button
+                >
+                <svg class="headermodal__svg" 
+                            width='40' 
+                            height='40'
+                            aria-label="переключатель мобильного меню"
+                    >
+                        <use class="icon-cross" href="./images/icons.svg#icon-close-black-18dp-2-1">
+                        </use>
+                        <use class="icon-menu" href="./images/icons.svg#icon-menu_40px-1">
+                        </use>
+                </svg>
+                </button>
+                <div class="menu-conteinerone" id="menu-conteinerone" data-menu>
+                    <ul class="menu__modal-list">
+                        <li class="menu__modal-point">
+                            <a href="index.html" class="menu__modal-link">Студия</a>
+                        </li>
+                        <li class="menu__modal-point">
+                            <a href="./portfolio.html" class="menu__modal-link current">Портфолио</a>
+                        </li>
+                        <li class="menu__modal-point lastm">
+                            <a href="" class="menu__modal-link">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="menu-flex-modall">
+                        <ul class="menu__modal-listtwo">
+                        <li class="menu__modal-listtwo-point pbp">
+                            <a class="menu__modal-listtwo__link-conta" href="tel:+380961111111">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="menu__modal-listtwo-point">
+                            <a class="menu__modal-listtwo__link-contakt" href="mailto:info@devstudio.com">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        </ul>
+                        <ul class="menu__modal-listthree">
+                        <li class="menu__modal-listthree__item">
+                            <a href="" class="rightmodal-listthree__link">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="menu__modal-listthree__item">
+                            <a href="" class="rightmodal-listthree__link">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="menu__modal-listthree__item">
+                            <a href="" class="rightmodal-listthree__link">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="menu__modal-listthree__item mritem riembor">
+                            <a href="" class="rightmodal-listthree__link">
+                                LinkedIn
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
                 <ul class="site-nav">
                     <li class="site-nav__point nav">
                         <a href="index.html" class="site-nav__link">Студия</a>
@@ -27,12 +93,6 @@
                         <a href="" class="site-nav__link">Контакты</a>
                     </li>
                 </ul>
-                    <button class="headermodal" type="button">
-                        <svg class="headermodal__svg">
-                            <use href="./images/icons.svg#icon-menu_40px-1">
-                            </use>
-                        </svg>
-                    </button>
             </nav>
             <ul class="auth">
                 <li class="auth__point mbheader dot">
@@ -482,6 +542,8 @@
             </div>
         </div>
     </footer>
+    <!--JS-->
+    <script src="./js2/modaltwo.js"></script>
 </body>
 </html>
 
