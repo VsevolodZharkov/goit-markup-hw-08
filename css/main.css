@@ -427,6 +427,7 @@ img {
 .menu-flex-modall {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .menu__modal-listtwo {
